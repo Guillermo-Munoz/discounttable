@@ -65,10 +65,10 @@ class DiscountTable extends Module
 
 public function hookDisplayDiscountTable($params)
 {
-    // Solo en p¨¢gina de producto principal
+    // Solo en pï¿½ï¿½gina de producto principal
     $controller = Context::getContext()->controller;
     
-    // Verificar si estamos en p¨¢gina de producto
+    // Verificar si estamos en pï¿½ï¿½gina de producto
     if (!isset($controller->php_self) || $controller->php_self != 'product') {
         return '';
     }
@@ -76,15 +76,15 @@ public function hookDisplayDiscountTable($params)
     // Obtener ID del producto de diferentes maneras
     $id_product = 0;
     
-    // M¨¦todo 1: Desde los par¨¢metros
+    // Mï¿½ï¿½todo 1: Desde los parï¿½ï¿½metros
     if (isset($params['product']['id_product'])) {
         $id_product = (int)$params['product']['id_product'];
     }
-    // M¨¦todo 2: Desde la URL
+    // Mï¿½ï¿½todo 2: Desde la URL
     elseif (Tools::getValue('id_product')) {
         $id_product = (int)Tools::getValue('id_product');
     }
-    // M¨¦todo 3: Desde el controlador
+    // Mï¿½ï¿½todo 3: Desde el controlador
     elseif (isset($controller->id_product)) {
         $id_product = (int)$controller->id_product;
     }
@@ -93,7 +93,7 @@ public function hookDisplayDiscountTable($params)
         return '';
     }
     
-    // Validar categor¨ªa si est¨¢ configurada
+    // Validar categorï¿½ï¿½a si estï¿½ï¿½ configurada
     $selected_cat = (int)Configuration::get('DT_CATEGORY_ID');
     if ($selected_cat > 0) {
         $product_categories = Product::getProductCategories($id_product);
