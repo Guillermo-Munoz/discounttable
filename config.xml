@@ -1,0 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>discounttable</name>
+    <displayName><![CDATA[Discount Table by Category]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Shows quantity-based price table using existing cart rules]]></description>
+    <author><![CDATA[Williams]]></author>
+    <tab><![CDATA[pricing_promotion]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
