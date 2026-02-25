@@ -11,7 +11,7 @@ El módulo ha sido diseñado bajo estándares de alta disponibilidad y bajo acop
 * **Motor de Filtrado Dinámico**: Sistema de validación en tiempo real que procesa fechas de vigencia (`date_to`), estados de activación y segmentación por ID de categoría.
 * **Abstracción de Datos (DTO)**: Capa de transformación que convierte datos brutos del esquema SQL en modelos de datos formateados para la vista (manejo de divisas e internacionalización de porcentajes).
 
-
+Diagrama.png
 
 [Image of Model-View-Controller architecture diagram]
 
@@ -43,3 +43,4 @@ El módulo provee una interfaz de administración robusta que incluye:
 
 ---
 **Nota de implementación**: Este módulo representa una solución técnica robusta validada para entornos de producción de e-commerce con alta concurrencia.
+
